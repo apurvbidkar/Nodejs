@@ -1,10 +1,10 @@
 #!/bin/bash
 
 tar czf easyio.tar.gz main.js package.json public LICENSE
-scp easyio.tar.gz nanogram@nanogram.io:~
+scp easyio.tar.gz root@3.87.29.11:~
 rm easyio.tar.gz
 
-ssh nanogram@nanogram.io << 'ENDSSH'
+ssh  root@3.87.29.11 << 'ENDSSH'
 pm2 stop all
 rm -rf easyio
 mkdir easyio
