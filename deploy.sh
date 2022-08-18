@@ -1,16 +1,8 @@
-#!/bin/bash
-
-tar czf easyio.tar.gz main.js package.json public LICENSE
-scp easyio.tar.gz root@3.87.29.11:~
-rm easyio.tar.gz
-
-ssh  root@3.87.29.11 << 'ENDSSH'
-pm2 stop all
-rm -rf easyio
-mkdir easyio
-tar xf easyio.tar.gz -C easyio
-rm easyio.tar.gz
-cd easyio 
-npm i
-pm2 start all
-ENDSSH
+#!/bin/sh
+ssh root@3.87.29.11<<EOF
+   cd /var/www/html/
+   git pull origin master
+   npm install --production
+   pm2 restart all
+   exit
+EOF
