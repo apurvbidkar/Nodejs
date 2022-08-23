@@ -1,5 +1,5 @@
 #!/bin/bash
-ssh jenkins@ip-172-31-47-8<<EOF
+ssh jenkins@ip-172-31-22-83<<EOF
    cd /var/www/html/
    sudo git pull origin master
    sudo npm install --production
