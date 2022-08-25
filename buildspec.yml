@@ -11,12 +11,6 @@ phases:
       - npm install
       - npm install pm2 -g
       
-  post_build:
-    commands:
-      - npm i
-      - npm start
-      - pm2 start
-      
 artifacts:
   files:
     - main.js
