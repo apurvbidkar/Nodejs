@@ -12,7 +12,8 @@ phases:
       
   post_build:
     commands:
-      - npm test
+      - npm i
+      - npm start
 
 artifacts:
   files:
