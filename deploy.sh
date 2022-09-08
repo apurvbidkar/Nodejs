@@ -1,4 +1,4 @@
-#!/bin/sh
+-#!/bin/sh
 ssh root@44.201.194.30<<EOF
    cd /var/www/html/
    git pull origin master
