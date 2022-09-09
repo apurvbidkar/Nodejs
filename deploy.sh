@@ -1,5 +1,5 @@
 #!/bin/bash
-ssh root@44.201.194.30 <<EOF
+ssh ubuntu@44.201.194.30 << EOF
    cd /var/www/html/
    git pull origin master
    npm install --production
