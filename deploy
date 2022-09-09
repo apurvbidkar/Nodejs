@@ -1,0 +1,7 @@
+#!/bin/sh
+ssh ubuntu@44.201.194.30 < cd /home/ubuntu/Nodejs
+   git pull origin master
+   npm install --production
+   pm2 restart all
+   exit
+EOF
