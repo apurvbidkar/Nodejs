@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 ssh ubuntu@44.211.47.216 < cd /home/ubuntu/Nodejs
    git pull origin master
    npm install --production
