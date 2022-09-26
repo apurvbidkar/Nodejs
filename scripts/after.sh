@@ -1,9 +1,8 @@
 #!/bin/bash
+cd /home/ubuntu/Nodejs-app/
 sudo npm i 
 sudo npm start
-cd /var/www/html/ 
-sudo git pull origin master
-sudo npm install --production
+sudo npm install pm2 -g
 sudo pm2 restart all
 
 
