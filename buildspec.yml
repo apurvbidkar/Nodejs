@@ -13,7 +13,4 @@ phases:
       
 artifacts:
   files:
-    - main.js
-    - ecosystem.json
-    - package.json
-    - appspec.yml
+    - "**/*"
