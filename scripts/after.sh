@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/Nodejs-app/
+cd /home/ubuntu/Nodejs
 sudo npm i 
 sudo npm start
 sudo npm install pm2 -g
