@@ -1,16 +1,16 @@
 version: 0.0
 os: linux
-
 files:
   - source: /
-  - destination: /home/ubuntu/Nodejs-app
-  
+    destination: /home/ubuntu/Nodejs
+    overwrite: true
+    
 hooks:
-  BeforeInstall: 
+  BeforeInstall:
     - location: scripts/before.sh
-    - timeout: 100
-    - runas: root
+      timeout: 300
+      runas: root
   AfterInstall:
     - location: scripts/after.sh
-    - timeout: 100
-    - runas: root
+      timeout: 300
+      runas: root
