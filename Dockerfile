@@ -4,5 +4,5 @@ COPY ./  Nodejs
 WORKDIR Nodejs
 RUN npm install
 CMD ["node" , "main.js"]
-EXPOSE 9000
+EXPOSE 8085
 
