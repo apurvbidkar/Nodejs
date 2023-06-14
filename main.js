@@ -47,7 +47,7 @@ io.on('connection', (sock) => {
     console.log('Socket Disconnected');
   });
 });
-
+console.log(process.env)
 server.listen(+port, '0.0.0.0', (err) => {
   if (err) {
     console.log(err.stack);
